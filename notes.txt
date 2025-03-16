@@ -133,3 +133,22 @@ class="bg- " = para background
     bg-opacity-25,50,75 -> quando menor o X, menor a opacidade
 
 =============== AULA 6 - MARGIN E PADDINGS ==============
+
+class="mZ-N" 
+    N vai de 0 a 5
+    m é de margin, sendo que Z pode ser
+        t - top
+        b - bottom
+        l - left
+        r - right
+        x - margin no eixo X (esqueda E direita)
+        y - margin no eixo y (cima E baixo)
+        sem nada - para todos
+    ren - unidade de medida de 0 a 5 que será usado
+
+class="mZ-N" 
+    N vai de 0 a 5
+    p é de padding, segue exatamente as mesmas regras do margin
+
+
+=============== AULA 7 - TAMANHOS E BORDAS ==============
