@@ -1,0 +1,135 @@
+=========================AULA 1==================================
+
+Layout fluido - Usa %, conforme reduz ou aumenta vai fluindo
+    Ele se adequa apenas em relação a porcentagem, vai ter a mesma quantidade de itens
+
+Layout Responsivo - Responde aos diferentes tamanhos de tela
+        Muda o layout de acordo com o tamanho da tela
+
+Mobile first - Começar a desenvolver o site baseado no menor dispositivo
+Media Queries
+
+Layout adaptativo - Carrega outro site, para outras versões
+
+Bootstrap
+
+Viewport - Toda área que posso visualizar no site
+content = "width=device-width" - em relação ao dispositivo que estou usando
+initial-scale1 - escala 1 de zoom
+shrink-to-fit=no => encolher para caber, iria fazer os conteúdos diminuirem para caber
+
+bootsrap.min.css - minimizado, é igual o bootstrap.css, mas sem espaçamento
+    melhor para carregar
+ 
+integrity e crossorigin - pra saber de onde o arquivo ta sendo carregado, em isso, ele da um erro
+
+
+==========================AULA 2==================
+
+Formatação de textos
+
+O bootsrap já possui formatações padrão, um exemplo é H1,H2 etc
+se usar class="hN", vai usar a formatação desse H
+
+class display-1,2,3... - formatação específica para textos em display
+geralmente usado para dar destaque no texto
+
+class="lead" - para parágrafos geralmente, mas posso usar em qualquer um todos
+
+parágrafo monospace - "máquina de escrever", todas tem a mesma largura
+class="font-monospace" - ALTERAÇÃO NA V5
+
+
+fw-x -> font-weight X (negrito, etc)
+fst-x -> font-style X (italixo, etc)
+se usar espaço nas classes, posso usar mais de um 
+text-uppercase -> fica em letra maiúscula
+text-lowercase -> fica em letra minuscula
+text-captalize -> primeira letra de cada palavra maiusculo
+text-start / center / end -> alinha no começo/meio/fim
+blockquote - citação
+
+<blockquote> 
+</blockquote> - cria um bloco de citação
+<cite> </cite> - cria um "créditos "
+
+class="truncate" - se passar o mouse, ai sim o texto maior aparece
+class="list-unstyled" - remover os estilos padrões da lista
+class="list-inline" + list-inline-item -> crio uma lista em linha
+
+===================AULA 3 - ALINHAMENTO DE TEXTO======================
+
+text-justify -> REMOVIDO DO BOOTSTRAP 5
+SUFIXOS DO BOOTSTRAP
+    XG - Extra Large, para monitores  >= 1200px
+    LG - Largo, para laptops >= 992px
+    MD - Medio, para tablet >= 768px
+    SM - Small, para celular >= 576px
+vai ser aplicado BASEADA na tela
+
+class="text-xg/lg/md/sm-alinhamento" = defino que, a partir do alinhamento X, vai ser desse jeito
+
+Elemento block -> inline
+class="bg-success" -> fundo verde
+bg-warning -> fundo amarelo
+d-inline -> classe para transformar de um block para inline
+d-block -> classe para transformar de um inline para block
+d-inline-block -> híbrido
+inline-block: The element is formatted as an inline element, but it behaves like a block element. This means it can have a width and height, and you can set margins and paddings on it. However, it will still flow with other inline elements on the same line.
+
+inline- n posso colocar margin , se n cabe na linha, quebra. O tamanho é só de acordo com o conteudo
+block - posso colocar margin,  o tamanho pode ser definido
+
+
+==================AULA 4 - ELEMENTOS FLUTUANTES ==============================
+
+class="float-start" - floats para esquerda ou direita
+class="float-end"
+LEMBRE-SE - Elementos float saem do fluxo normal do documento
+    Solução - div com classe pois sem isso, ele n fica com altura
+    class="clearfix"
+float-none = evita o flutuar 
+
+posicionamento fixo: VAI FICAR MESMO SE ROLAR A PÁGINA
+class="fixed-top" -> fixa que a classe vai ficar no topo do documento
+class="fixed-bottom -> vai ficar no final
+
+float Responsivo
+class="float-md/sm/lg/xl-end" -> vai flutuar de acordo com a tela
+
+sticky-top
+classe geralmente usado para listas, quando a barra de rolagem chega nele, GRUDA no topo
+só tem pro topo
+
+
+=============== AULA 5 - CORES E BACKGROUNDS ==============
+
+class="text- "
+    primary - fica em azul
+    secondary - fica num cinza
+    success - verde sucesso
+    info - azul
+    warning - amarelo
+    danger - vermelho
+    light - fica quase branco
+    dark - preto normal
+    white - branco
+    black-50 = fica meio opaco (NÃO FUNCIONA NO BOOTSTRAP 5)]
+        Use: text-opacity-25,50,75 -> quando menor o X, menor a opacidade
+    
+Lembre-se que pode usar em qualquer classe que terá texto
+
+class="bg- " = para background
+    primary - fica em azul
+    secondary - fica num cinza
+    success - verde sucesso
+    info - azul
+    warning - amarelo
+    danger - vermelho
+    light - fica quase branco
+    dark - preto normal
+    white - branco
+    bg-transparent - transparente 
+    bg-opacity-25,50,75 -> quando menor o X, menor a opacidade
+
+=============== AULA 6 - MARGIN E PADDINGS ==============
