@@ -152,3 +152,12 @@ class="mZ-N"
 
 
 =============== AULA 7 - TAMANHOS E BORDAS ==============
+
+class="w-X" sendo x = 25, 50 , 75, 100 e auto = width N na div
+class="h-X" - igual mas com altura
+class="border" - cria uma borda em todos lados   
+    se quiser especificar, border-right, bottom etc
+    border-cor -> posso colocar a cor
+        sendo elas primary, secondary, success, etc
+        NOTA - Preciso primeiro colocar border e DEPOIS border-X
+rounded - arredondamento da borda, posso colocar -top/left/right/bottom e circle - vira um círculo
